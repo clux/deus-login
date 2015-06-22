@@ -1,5 +1,5 @@
 {
-  "name": "deus",
+  "name": "deus-login",
   "version": "0.6.0",
   "main": "deus.build.html",
   "ignore": [
