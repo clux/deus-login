@@ -1,5 +1,4 @@
 # Deus Login
-![bower version](https://badge.fury.io/bo/deus-login.svg)
 [![development dependency status](https://david-dm.org/clux/deus-login/dev-status.svg)](https://david-dm.org/clux/deus-login)
 
 UI component experiment using something similar to the login design from the original Deus Ex game. The component relies on the [polymer library](http://www.polymer-project.org/).
