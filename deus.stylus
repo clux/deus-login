@@ -1,0 +1,111 @@
+// skeleton
+:host
+  position: absolute
+  left: 10%
+  top: 50%
+  color: #0f0
+  font-weight: normal
+  font-size: 12px
+  font-family: Arial, Helvetica
+
+#dxlogin
+  position: relative
+  background-image: url(./deus9.png)
+  width: 343px
+  height: 151px
+  border-radius: 5px
+
+.ava
+  position: absolute
+  top: 5px
+  right: 6px
+  width: 61px
+  height: 61px
+  background-image: url(./dxava-61.jpg)
+
+// main form input
+label
+  user-select: none
+  margin-top: 3px
+  font-weight: bold
+  width: 80px
+  position: absolute
+  left: 10px
+
+#dxusrlbl, #dxusr
+  top: 22px
+
+#dxpwlbl, #dxpw
+  top: 51px
+
+input
+  font-family: 'Roboto Slab', serif;
+  width: 140px
+  height: 16px
+  border: 1px solid #070
+  border-top-right-radius: 10px
+  box-shadow: 0 0 0 1pt black
+  outline-width: 0
+  background-color: #010
+  color: #0f0
+  font-size: 11px
+  font-weight: bold
+  vertical-alight: bottom
+  letter-spacing: 2px
+  padding-left: 2px
+  position: absolute
+  left: 103px
+input:focus
+  border: 1px solid #0c0
+input::selection
+  background: #0f0
+
+// error and decoration text
+p
+  margin: 0px
+  padding-left: 12px
+  position: absolute
+
+p.dxerror
+  bottom: 34px
+  font-weight: 11px
+  color: #f00
+
+p.dxurl
+  color: #ddd
+  bottom: 9px
+  font-size: 8px
+
+// all the button stuff
+button
+  position: absolute
+  bottom: -15px
+#dxsubmit
+  right: 91px
+#dxcancel
+  right: 1px
+
+button
+  background-color: #050
+  border: 1px solid #070
+  border-bottom-right-radius: 10px
+  box-shadow: 0 0 0 1pt black
+  outline-width: 0 // replace with something sensible
+  color: #fff
+  width: 83px
+  height: 19px
+  padding: 0px 5px
+  text-align: left
+button:hover
+  color: #ffff21
+button:active
+  background-color: #010
+button:focus
+  border-color: #0c0
+
+// static text is not of relevance
+label, p, button
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  cursor: default

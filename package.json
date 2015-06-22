@@ -1,0 +1,27 @@
+{
+  "name": "deus-login",
+  "description": "Deus Ex Login component",
+  "private": true,
+  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "clux/deus-login"
+  },
+  "scripts": {
+    "build": "make js css html",
+    "watch": "watch-run -p 'deus.+(html|stylus)' make css html",
+    "pretestling": "make js css html",
+    "testling": "testling -x google-chrome",
+    "prepublish": "make release"
+  },
+  "devDependencies": {
+    "stylus": "^0.51.1",
+    "tape": "^4.0.0",
+    "vulcanize": "^1.9.1",
+    "watch-run": "^1.2.2"
+  },
+  "testling": {
+    "html": "test/deus.test.html"
+  }
+}
