@@ -1,7 +1,7 @@
 {
-  "name": "icebreaker",
+  "name": "deus",
   "version": "0.5.0",
-  "main": "icebreaker.html",
+  "main": "deus.build.html",
   "ignore": [
     "**/.*",
     "node_modules",
