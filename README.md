@@ -5,13 +5,13 @@
 UI component experiment using something similar to the login design from the original Deus Ex game. The component relies on the [polymer library](http://www.polymer-project.org/).
 
 The login frame looks like this:
-![frame!](https://github.com/clux/deus-login/raw/master/deus.png)
+![frame!](https://github.com/clux/deus-login/raw/master/deus9.png)
 
 ## Installation
 Install from [bower](https://www.npmjs.com/package/bower):
 
 ```sh
-bower install deus-login
+bower install clux/deus-login
 ```
 
 Then add an import to the built html:
@@ -23,14 +23,14 @@ Then add an import to the built html:
 Then include it by using the custom tag:
 
 ```html
-<ice-breaker></ice-breaker>
+<deus-login></deus-login>
 ```
 
 Then, you can listen out in your JavaScript for the `login` event, and do whatever with it.
 
 ```js
-var lo = document.querySelector('deus-login');
-ice.addEventListener('login', function () {
+var dx = document.querySelector('deus-login');
+dx.addEventListener('login', function (data) {
   // pass data on maybe
 });
 ```
