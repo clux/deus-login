@@ -11,11 +11,14 @@
   "scripts": {
     "build": "make js css html",
     "watch": "watch-run -p 'deus.+(html|stylus)' make css html",
+    "bsync": "browser-sync start --server --files deus.build.html index.html",
+    "develop": "parallelshell 'npm run watch' 'npm run bsync'",
     "pretestling": "make js css html",
     "testling": "testling -x google-chrome",
     "release": "make release"
   },
   "devDependencies": {
+    "parallelshell": "^1.1.1",
     "stylus": "^0.51.1",
     "tape": "^4.0.0",
     "vulcanize": "^1.9.1",
