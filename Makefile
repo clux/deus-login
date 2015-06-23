@@ -2,7 +2,8 @@ js:
 	browserify -r tape > bundle.js
 
 css:
-	stylus --inline deus.stylus
+	stylus deus.stylus --inline \
+		--use autoprefixer-stylus --with "{ browsers: ['last 2 versions'] }"
 
 html:
 	vulcanize deus.html --inline-css \

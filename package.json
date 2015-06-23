@@ -18,6 +18,7 @@
     "release": "make release"
   },
   "devDependencies": {
+    "autoprefixer-stylus": "^0.7.0",
     "parallelshell": "^1.1.1",
     "stylus": "^0.51.1",
     "tape": "^4.0.0",
