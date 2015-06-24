@@ -7,9 +7,16 @@
     <link rel="import" href="./deus.build.html">
   </head>
   <body>
-    <deus-login>Loading</deus-login>
+    <form action="/login" method="post" autocomplete="off" is="deus-login">Loading</form>
   </body>
   <script>
-
+    var f = document.querySelector('form');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      f.reason = 'Pretend this failed';
+      setTimeout(function () {
+        f.reason = '';
+      }, 1000);
+    });
   </script>
 </html>
