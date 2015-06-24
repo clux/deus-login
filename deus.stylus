@@ -7,21 +7,18 @@
   font-weight: normal
   font-size: 12px
   font-family: Arial, Helvetica
-
-#dxlogin
-  position: relative
   background-image: url(./deus9.png)
   width: 343px
   height: 151px
   border-radius: 5px
 
-.ava
+#dxava
   position: absolute
-  top: 5px
-  right: 6px
-  width: 61px
-  height: 61px
-  background-image: url(./dxava-61.jpg)
+  top: 4px
+  right: 5px
+  width: 62px
+  height: 62px
+  border: 1px solid #000
 
 // main form input
 label
@@ -39,7 +36,7 @@ label
   top: 51px
 
 input
-  font-family: 'Roboto Slab', serif;
+  font-family: monospace
   width: 140px
   height: 16px
   border: 1px solid #070
@@ -48,11 +45,10 @@ input
   outline-width: 0
   background-color: #010
   color: #0f0
-  font-size: 11px
+  font-size: 12px
   font-weight: bold
-  vertical-alight: bottom
   letter-spacing: 2px
-  padding-left: 2px
+  padding-left: 3px
   position: absolute
   left: 103px
 input:focus
@@ -66,12 +62,12 @@ p
   padding-left: 12px
   position: absolute
 
-p.dxerror
+p#dxerror
   bottom: 34px
   font-weight: 11px
   color: #f00
 
-p.dxurl
+p#dxurl
   color: #ddd
   bottom: 9px
   font-size: 8px

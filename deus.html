@@ -3,31 +3,31 @@
 <dom-module name="deus-login">
   <link rel="stylesheet" href="./deus.css">
   <template>
-    <div id="dxlogin">
-      <form action="/login" method="post" autocomplete="off">
-        <label id="dxusrlbl" for="dxusr">User Name</label>
-        <input id="dxusr" type="text" class="form-control" name="username">
-        <label id="dxpwlbl" for="dxpw">Password</label>
-        <input id="dxpw" type="password" name="password">
-        <p class="dxerror">Login failed</p>
-        <p class="dxurl">Daedalus:GlobalNode:HUB//X-PEC.160//CLUX.ORG/Login</p>
-        <button id="dxsubmit" type="submit">Login</button>
-        <button id="dxcancel" type="reset">Cancel</button>
-      </form>
-      <div class="ava"></div>
-    </div>
+    <form action="/login" method="post" autocomplete="off">
+      <label id="dxusrlbl" for="dxusr">User Name</label>
+      <input id="dxusr" type="text" name="username">
+      <label id="dxpwlbl" for="dxpw">Password</label>
+      <input id="dxpw" type="password" name="password">
+      <p id="dxerror">{{reason}}</p>
+      <p id="dxurl">{{daedalus}}</p>
+      <button id="dxsubmit" type="submit">Login</button>
+      <button id="dxcancel" type="reset">Cancel</button>
+    </form>
+    <img id="dxava" src="{{gravatar}}">
   </template>
 </dom-module>
-
 
 <script>
 (function () {
   Polymer({
     is: 'deus-login',
     ready: function () {
-      var url = 'Daedalus:GlobalNode:HUB//X-PEC.160//CLUX.ORG/Login';
+      this.reason = '';
+      this.daedalus = 'Daedalus:GlobalNode:HUB//X-PEC.160//CLUX.ORG/Login';
+      this.gravatar = 'http://www.gravatar.com/avatar/7f6887f97935919ba03a39b565755e7b?s=100';
     },
     login: function () {
+      this.reason = 'Login failed';
     }
   });
 }());
