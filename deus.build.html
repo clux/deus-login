@@ -127,14 +127,15 @@ button {
 </style>
   <template>
     <label id="dxusrlbl" for="dxusr">User Name</label>
-    <input id="dxusr" type="text" name="username">
+    <input id="dxusr" type="text" name="username" required="" autofocus="">
     <label id="dxpwlbl" for="dxpw">Password</label>
-    <input id="dxpw" type="password" name="password">
+    <input id="dxpw" type="password" name="password" required="">
     <p id="dxerror">{{reason}}</p>
     <p id="dxurl">{{daedalus}}</p>
     <button id="dxsubmit" type="submit">Login</button>
     <button id="dxcancel" type="reset">Cancel</button>
     <img id="dxava" src="{{logo}}">
+    <content></content>
   </template>
 </dom-module>
 
@@ -156,6 +157,11 @@ button {
         type: String,
         value: 'Daedalus:GlobalNode:HUB//X-PEC.160//CLUX.ORG/Login'
       }
+    },
+    hostAttributes: {
+      // don't want to autocomplete a login form
+      // plus hard to style with this theme
+      autocomplete: "off"
     }
   });
 }());

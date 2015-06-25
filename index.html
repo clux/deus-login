@@ -7,12 +7,17 @@
     <link rel="import" href="./deus.build.html">
   </head>
   <body>
-    <form action="/login" method="post" autocomplete="off" is="deus-login">Loading</form>
+    <form action="/login" method="post" is="deus-login">
+      <input type="hidden" name="csrf">
+    </form>
   </body>
   <script>
     var f = document.querySelector('form');
     f.addEventListener('submit', function (e) {
       e.preventDefault();
+      var fd = new FormData(f);
+      fd.append('bah', 'woot')
+      console.log(fd['bah']);
       f.reason = 'Pretend this failed';
       setTimeout(function () {
         f.reason = '';

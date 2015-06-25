@@ -22,10 +22,10 @@ Then add an import to the built html:
 Then include it by using the custom tag:
 
 ```html
-<form action="/login" method="post" autocomplete="off" is="deus-login" dxlogo="http://logo.url.png">Loading</form>
+<form action="/login" method="post" is="deus-login" logo="http://logo.url.png"></form>
 ```
 
-Then, observe the form like you would any other form and intercept the forms `submit` event. If login fails, you can give visual feedback:
+Then, let it post, or observe the form like you would any other form and intercept the forms `submit` event. If login fails, you can give visual feedback:
 
 ```js
 var f = document.querySelector('form');
@@ -34,6 +34,8 @@ f.addEventListener('submit', function (e) {
   f.reason = 'Pretend this failed';
 });
 ```
+
+You can embed a CSRF token inside the form element like any other form element.
 
 ## Dependencies
 You need to include a script tag to polyfill web component support on browsers other than chrome:

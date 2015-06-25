@@ -12,7 +12,7 @@
     "build": "make js css html",
     "watch": "watch-run -p 'deus.+(html|stylus)' make css html",
     "sync": "browser-sync start --server --files deus.build.html index.html",
-    "develop": "parallelshell 'npm run watch' 'npm run sync'",
+    "develop": "npm run build && parallelshell 'npm run watch' 'npm run sync'",
     "pretestling": "make js css html",
     "testling": "testling -x google-chrome",
     "release": "make release"
