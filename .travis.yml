@@ -19,7 +19,6 @@ before_script:
   - npm install
   - export PATH=$PWD/node_modules/.bin:$PATH
   - npm run build
+  - 'export DISPLAY=:99.0'
 script:
   - xvfb-run testling -x firefox
-  - xvfb-run testling -x google-chrome
-
