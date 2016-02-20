@@ -22,6 +22,7 @@
     "parallelshell": "^1.1.1",
     "stylus": "^0.51.1",
     "tape": "^4.0.0",
+    "testling": "^1.7.1",
     "vulcanize": "^1.9.1",
     "watch-run": "^1.2.2"
   },
