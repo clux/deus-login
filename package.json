@@ -14,7 +14,7 @@
     "sync": "browser-sync start --server --files deus.build.html index.html",
     "develop": "npm run build && parallelshell 'npm run watch' 'npm run sync'",
     "pretestling": "make js css html",
-    "testling": "testling -x google-chrome",
+    "testling": "testling -x google-chrome-stable",
     "release": "make release"
   },
   "devDependencies": {

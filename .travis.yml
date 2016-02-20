@@ -1,0 +1,23 @@
+language: node_js
+sudo: false
+node_js:
+  - 4
+addons:
+  firefox: latest
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+before_script:
+  - bower install
+  - export PATH=$PWD/node_modules/.bin:$PATH
+script:
+  - xvfb_run testling -x google-chrome
+after_success:
+  - npm install coveralls
+  - 'npm run coverage | coveralls'

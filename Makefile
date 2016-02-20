@@ -1,3 +1,6 @@
+SHELL := /bin/bash
+PATH := node_modules/.bin:$(PATH)
+
 js:
 	browserify -r tape > bundle.js
 
