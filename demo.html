@@ -15,9 +15,6 @@
     var f = document.querySelector('form');
     f.addEventListener('submit', function (e) {
       e.preventDefault();
-      var fd = new FormData(f);
-      fd.append('bah', 'woot')
-      console.log(fd['bah']);
       f.reason = 'Pretend this failed';
       setTimeout(function () {
         f.reason = '';
