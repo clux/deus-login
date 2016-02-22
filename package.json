@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.7.0",
+    "co": "^4.6.0",
     "parallelshell": "^1.1.1",
+    "phantom": "^2.0.0",
     "stylus": "^0.51.1",
     "tape": "^4.0.0",
     "testling": "^1.7.1",

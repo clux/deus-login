@@ -1,6 +1,6 @@
 var test = require('tape');
 
-test("link", function (t) {
+test('link', function (t) {
   t.plan(1);
   var tag = document.createElement('form', 'deus-login');
   document.body.appendChild(tag);
